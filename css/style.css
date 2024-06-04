@@ -1,0 +1,88 @@
+body {
+  scrollbar-gutter: stable;
+  background: #ADC9D5;
+  font-family: Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  user-select: none;
+  margin: 0;
+}
+
+.content {
+  margin: 0 auto;
+  width: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  margin: 30px 0 20px;
+  color: #fff;
+  text-shadow: 0px 0px 5px #00000075;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+
+.count__image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px 0 0;
+}
+
+.count__number {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0px 0px 5px #00000075;
+}
+
+.coin {
+  display: flex;
+  border-radius: 50%;
+}
+
+.coin__image {
+  width: 350px;
+  height: 350px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0px #00000075;
+}
+
+.coin:active {
+  transform: scale(.975);
+}
+
+.coin__tap {
+  position: absolute;
+  text-shadow: 0px 0px 5px black;
+  color: #ffffff;
+  font-weight: bold;
+  pointer-events: none;
+  margin: 0;
+  animation: .5s vanish;
+  opacity: 0;
+}
+
+@keyframes vanish {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
